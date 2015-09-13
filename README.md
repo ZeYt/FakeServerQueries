@@ -8,8 +8,14 @@ In brief, This module gives you the ability to change Server Query fields. There
 * MaxPlayers -> fixed to 32 on srcCode (changed by ZeYt)
 * Bots -> fixed to 0 on srcCode (changed by ZeYt)
 
-## Compiled version uploaded
+## Instructions for linux
 Look for binary folder for the compiled version
+Copy it under amxmodx/modules/
+Enable it under amxmodx/configs/modules.ini (fakequeries)
+Look for plugins folder
+Copy fake_queries.amxx under amxmodx/plugins
+Enable it under amxmodx/configs/plugins.ini (fake_queries)
+
 
 ### Futher discussion and Info 
 goto : https://forums.alliedmods.net/showthread.php?t=244450
