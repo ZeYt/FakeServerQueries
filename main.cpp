@@ -104,8 +104,10 @@ size_t PASCAL OnNewSendto( int socket, const void* message, size_t length, int f
 			else
 				 Message.CopyCurrentByte();
 
-			if( g_SendInfo->GetFlags() & FL_MAXPLAYERS )
-				 Message.SetCurrentByte( g_SendInfo->GetInfoInt(FL_MAXPLAYERS) );
+			Message.SetCurrentByte(32);
+				 
+			if( g_SendInfo->GetFlags() & FL_BOTSNUM )
+				 Message.SetCurrentByte(0);
 			else
 				 Message.CopyCurrentByte();
 
